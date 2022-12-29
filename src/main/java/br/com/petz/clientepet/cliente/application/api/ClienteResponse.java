@@ -9,9 +9,4 @@ import lombok.Value;
 @Builder
 public class ClienteResponse {
 	private UUID idCliente;
-	private String nomeCompleto;
-	private String email;
-	private String celular;
-	private String telefone;
-
 }

@@ -25,5 +25,4 @@ public class ClienteApplicationService implements ClienteService {
 				.idCliente(cliente.getIdCliente())
 				.build();
 	}
-
 }
