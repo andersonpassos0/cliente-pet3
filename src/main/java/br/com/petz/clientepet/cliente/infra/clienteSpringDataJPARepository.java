@@ -8,4 +8,6 @@ import br.com.petz.clientepet.cliente.domain.Cliente;
 
 public interface ClienteSpringDataJPARepository extends JpaRepository<Cliente, UUID>{
 
+	Cliente findByIdCliente(UUID idCliente);
+
 }
