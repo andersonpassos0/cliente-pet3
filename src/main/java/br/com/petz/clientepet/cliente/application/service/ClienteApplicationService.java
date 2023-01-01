@@ -50,6 +50,8 @@ public class ClienteApplicationService implements ClienteService {
 	@Override
 	public void deletaClienteAtravesId(UUID idCliente) {
 		log.info("[start] ClienteApplicationService - deletaClienteAtravesId");
+		Cliente cliente = clienteRepository.buscaClientAtravesId(idCliente);
+		clienteRepository.deletaCliente(cliente);
 		log.info("[finish] ClienteApplicationService - deletaClienteAtravesId");
 	}
 }
