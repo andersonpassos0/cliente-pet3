@@ -10,6 +10,8 @@ import br.com.petz.clientepet.cliente.application.api.ClienteAlteracaoRequest;
 import br.com.petz.clientepet.cliente.application.api.ClienteRequest;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -38,6 +40,7 @@ public class Cliente {
 	@NotBlank
 	private String celular;
 	private String telefone;
+	@Enumerated(EnumType.STRING)
 	private Sexo sexo;
 	private LocalDate dataNascimento;
 	@CPF
